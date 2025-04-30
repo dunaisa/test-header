@@ -1,0 +1,20 @@
+@use './variables';
+
+html {
+  font-size: variables.$base-font-size;
+}
+
+h1, p, span {
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Maza W00 Regular', 'Arial', sans-serif;
+}

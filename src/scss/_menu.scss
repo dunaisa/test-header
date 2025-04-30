@@ -1,0 +1,93 @@
+
+.munu-desk {
+  width: 100%;
+  position: fixed;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 9px 40px 11px 50px;
+
+  }
+  &__logo {
+    &-link {
+      text-decoration: none;
+    }
+    &-img {
+      max-width: 80px;
+    }
+  }
+  &__btn {
+    border: none;
+    outline: none;
+    background-color: #4888FF;
+    max-width: 101px;
+    width: 100%;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & div {
+      height: 2px;
+      width: 24px;
+      border-radius: 1px;
+      background-color: #ffffff;
+      margin-right: 18px;
+      &::after {
+        content: '';
+        display: block;
+        border-radius: 1px;
+        background-color: #ffffff;
+        height: 2px;
+        width: 38px;
+        transform: translateY(-10px);
+      }
+      &::before {
+        content: '';
+        display: block;
+        border-radius: 1px;
+        background-color: #ffffff;
+        height: 2px;
+        width: 38px;
+        transform: translateY(8px);
+      }     
+
+    }
+  }
+
+  &__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(72, 136, 255, 0.2);
+    padding: 4px 4px 4px 24px;
+    border-radius: 8px;
+    max-width: 654px;
+    width: 100%;
+    &-btn {
+      border: none;
+      outline: none;
+      background: #4888FF;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 1.4rem;
+      line-height: 110%;
+      width: 78px;
+      height: 40px;
+    }
+    &-form {
+      outline: none;
+      border: none;
+      color: #343A3F;
+      font-size: 1.6rem;
+      line-height: 110%;
+    }
+
+  }
+
+ 
+
+}

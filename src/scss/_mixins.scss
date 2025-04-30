@@ -1,0 +1,23 @@
+@mixin btn-hover-effect {
+  text-decoration: none;
+  padding: 12px;
+  margin: 0;
+  border-radius: 4px;
+  background-color: #F4F4F4;
+  transition: 0.3s;
+  font-size: 1.6rem;
+  line-height: 110%;
+  color: #343A3F;
+  &:hover {
+    color: #4888FF;
+  }
+  svg {
+    fill: #343A3F;
+    transition: 0.3s;
+  }
+  &:hover {
+    svg {
+      fill: #4888FF;
+    }
+  }
+}

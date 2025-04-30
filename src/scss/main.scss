@@ -1,4 +1,10 @@
-.title {
-  color: blueviolet;
-  font-size: 20px;
+@use './page';
+@use './header';
+@use './menu';
+@use './contacts';
+@use './lang';
+
+.main {
+  height: 100vh;
+  background: linear-gradient(56deg, #672870 20%, #4FE0FF 100%);
 }

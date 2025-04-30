@@ -1,0 +1,14 @@
+@use './mixins';
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  &__link {
+    @include mixins.btn-hover-effect;
+    &:hover {
+      background-color: #D4D9DD;
+    }
+  }
+}

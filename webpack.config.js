@@ -34,17 +34,11 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'img/',
-              publicPath: 'img/'
-            }
-          }
-        ]
-      },
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext][query]'
+        }
+      },      
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
