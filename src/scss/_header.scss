@@ -41,12 +41,21 @@
     font-size: 1.6rem;
     line-height: 2rem;
     color: #672870;
-    padding: 16px 0;
+    padding: 14px 0;
     margin: 0;
-    outline: none;
-    border: none;
     border-radius: 8px;
     max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      background-color: #4888FF;
+      color: #ffffff;
+    }
+    &-text {
+      margin-bottom: 5px;
+    }
   }
 }

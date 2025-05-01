@@ -4,9 +4,13 @@ html {
   font-size: variables.$base-font-size;
 }
 
-h1, p, span {
+h1, h2, p, span {
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .page {
@@ -17,4 +21,5 @@ h1, p, span {
   display: flex;
   flex-direction: column;
   font-family: 'Maza W00 Regular', 'Arial', sans-serif;
+  box-sizing: border-box;
 }
